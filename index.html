@@ -6,7 +6,7 @@
     <title>Můj první projekt v JavaScriptu</title>
 
     <!-- Odkazujeme na js -->
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,6 +19,12 @@
             <input type="text" id="input">
             <!-- onclikc musí mít název funkce, který odpovídá funkci v js, který je připojený k html. Pozor je to key sensitivity, takže rozlišuje malá a velká písmena -->
             <button onclick="Add()">Přidej</button> <!-- oncliock - Událost (event), která spouští funkci podle toho, pokud se na element klikne -->
+            <section>
+                <button onclick="Add_emoji(':D')">:D</button>
+                <button onclick="Add_emoji(':p')">:P</button>
+                <button onclick="Add_emoji('XD')">xD</button>
+                <button onclick="SMAZAT()">Smazat</button>                
+            </section>
         </section>
         <section>
             <!-- Zde odkazujeme na <p> pomocá id, zde se budou vypisovat text, který vložíme pomocí js přes input -->
