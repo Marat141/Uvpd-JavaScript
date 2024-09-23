@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Můj Druhý projekt v JavaScriptu</title>
+
+    <!-- Odkazujeme na js -->
+    <script src="/js/script_2.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <section class="section">
+                <input type="text" id="imageUrl" placeholder="Vlož URL obrázku">
+                <button onclick="changeImage()">Změnit obrázek</button>
+                <br><br>
+                <img id="randomImage" src="" alt="Obrázek se zobrazí zde" width="300">
+                
+            </section>
+
+            <section class="section informace">
+                <label for="input">Zadej text</label>
+                <input type="text" id="input">
+                <!-- onclikc musí mít název funkce, který odpovídá funkci v js, který je připojený k html. Pozor je to key sensitivity, takže rozlišuje malá a velká písmena -->
+                <button onclick="Add()">Přidej</button>
+                <section>
+                    <button onclick="SMAZAT()">Smazat</button>                
+                </section>
+                <section class="section">
+                    <!-- Zde odkazujeme na <p> pomocá id, zde se budou vypisovat text, který vložíme pomocí js přes input -->
+                    <p id="output">
+    
+                    </p>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html> 

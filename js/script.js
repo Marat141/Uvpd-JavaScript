@@ -9,7 +9,7 @@ function Add(){
     
     console.log("Hodnota v outputu je: ", output); // Pozor, zde jednotlivé datové typy oddělujeme "," jako v pythonu u print().
 
-    output.innerHTML += i  +"<br>"+ input.value ; // Řetězec zde spojujeme +, můžeme takto combinovat různé datové typy. Též můžete vypisovat i elementy jako je například <br>.
+    output.innerHTML += "<br>"  +i+ "." + input.value ; // Řetězec zde spojujeme +, můžeme takto combinovat různé datové typy. Též můžete vypisovat i elementy jako je například <br>.
 
     i++; // Zkrácený zápis pro přidání jedné hodnoty pro i, respektive i = i+1;
 }
@@ -45,4 +45,5 @@ function SMAZAT(){
 
 function Add_emoji(parametr){
     output.innerHTML+=" " + parametr;
+    
 }
